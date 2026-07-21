@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="false" key="VGA_SNAKE-partial_bit"/>
+	<item value="&lt;None&gt;" key="VGA_SNAKE-microblaze_0-initElf"/>
+	<item value="Local" key="VGA_SNAKE-target"/>
+	<item value="VGA_SNAKE" key="programfpga.hwplatform"/>
+	<item value="" key="VGA_SNAKE-bmmFile"/>
+	<item value="D:\vivadoproject\vga_snake\vga_snake.runs\impl_1\board_top.bit" key="VGA_SNAKE-bitFile"/>
+	<item value="Auto Detect" key="VGA_SNAKE-device"/>
+</section>

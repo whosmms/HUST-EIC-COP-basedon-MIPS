@@ -1,0 +1,603 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Jun  8 14:56:33 2026
+# Process ID: 23212
+# Current directory: D:/vivadoproject/vga_snake/vga_snake.runs/impl_1
+# Command line: vivado.exe -log board_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source board_top.tcl -notrace
+# Log file: D:/vivadoproject/vga_snake/vga_snake.runs/impl_1/board_top.vdi
+# Journal file: D:/vivadoproject/vga_snake/vga_snake.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source board_top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinxcopy/Vivado/2018.2/data/ip'.
+Command: link_design -top board_top -part xc7a100tcsg324-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_axi_gpio_0_0/vga_snake_axi_gpio_0_0.dcp' for cell 'u_system/vga_snake_i/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_axi_uartlite_0_0/vga_snake_axi_uartlite_0_0.dcp' for cell 'u_system/vga_snake_i/axi_uartlite_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_clk_wiz_1_0/vga_snake_clk_wiz_1_0.dcp' for cell 'u_system/vga_snake_i/clk_wiz_1'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_mdm_1_0/vga_snake_mdm_1_0.dcp' for cell 'u_system/vga_snake_i/mdm_1'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_microblaze_0_0/vga_snake_microblaze_0_0.dcp' for cell 'u_system/vga_snake_i/microblaze_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_microblaze_0_axi_intc_0/vga_snake_microblaze_0_axi_intc_0.dcp' for cell 'u_system/vga_snake_i/microblaze_0_axi_intc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_microblaze_0_xlconcat_0/vga_snake_microblaze_0_xlconcat_0.dcp' for cell 'u_system/vga_snake_i/microblaze_0_xlconcat'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_rst_clk_wiz_1_100M_0/vga_snake_rst_clk_wiz_1_100M_0.dcp' for cell 'u_system/vga_snake_i/rst_clk_wiz_1_100M'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_top_0_1/vga_snake_top_0_1.dcp' for cell 'u_system/vga_snake_i/top_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_xbar_0/vga_snake_xbar_0.dcp' for cell 'u_system/vga_snake_i/microblaze_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_auto_pc_0/vga_snake_auto_pc_0.dcp' for cell 'u_system/vga_snake_i/microblaze_0_axi_periph/s01_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_dlmb_bram_if_cntlr_0/vga_snake_dlmb_bram_if_cntlr_0.dcp' for cell 'u_system/vga_snake_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_dlmb_v10_0/vga_snake_dlmb_v10_0.dcp' for cell 'u_system/vga_snake_i/microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_ilmb_bram_if_cntlr_0/vga_snake_ilmb_bram_if_cntlr_0.dcp' for cell 'u_system/vga_snake_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_ilmb_v10_0/vga_snake_ilmb_v10_0.dcp' for cell 'u_system/vga_snake_i/microblaze_0_local_memory/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_lmb_bram_0/vga_snake_lmb_bram_0.dcp' for cell 'u_system/vga_snake_i/microblaze_0_local_memory/lmb_bram'
+INFO: [Netlist 29-17] Analyzing 8089 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-43] Netlist 'board_top' is not ideal for floorplanning, since the cellview 'vga_snake_top_0_1_snake_game' defined in file 'vga_snake_top_0_1.edf' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-35] Removing redundant IBUF, u_system/vga_snake_i/clk_wiz_1/inst/clkin1_ibufg, from the path connected to top-level port: sys_clock 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'u_system/vga_snake_i/clk_wiz_1/clk_in1' is not directly connected to top level port. Synthesis is ignored for d:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_clk_wiz_1_0/vga_snake_clk_wiz_1_0/vga_snake_clk_wiz_1_0.edf but preserved for implementation. [d:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_clk_wiz_1_0/vga_snake_clk_wiz_1_0/vga_snake_clk_wiz_1_0.edf:333]
+Parsing XDC File [d:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_microblaze_0_0/vga_snake_microblaze_0_0.xdc] for cell 'u_system/vga_snake_i/microblaze_0/U0'
+Finished Parsing XDC File [d:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_microblaze_0_0/vga_snake_microblaze_0_0.xdc] for cell 'u_system/vga_snake_i/microblaze_0/U0'
+Parsing XDC File [d:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_microblaze_0_axi_intc_0/vga_snake_microblaze_0_axi_intc_0.xdc] for cell 'u_system/vga_snake_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [d:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_microblaze_0_axi_intc_0/vga_snake_microblaze_0_axi_intc_0.xdc] for cell 'u_system/vga_snake_i/microblaze_0_axi_intc/U0'
+Parsing XDC File [d:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_mdm_1_0/vga_snake_mdm_1_0.xdc] for cell 'u_system/vga_snake_i/mdm_1/U0'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_mdm_1_0/vga_snake_mdm_1_0.xdc:50]
+get_clocks: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1354.270 ; gain = 591.727
+Finished Parsing XDC File [d:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_mdm_1_0/vga_snake_mdm_1_0.xdc] for cell 'u_system/vga_snake_i/mdm_1/U0'
+Parsing XDC File [d:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_clk_wiz_1_0/vga_snake_clk_wiz_1_0_board.xdc] for cell 'u_system/vga_snake_i/clk_wiz_1/inst'
+Finished Parsing XDC File [d:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_clk_wiz_1_0/vga_snake_clk_wiz_1_0_board.xdc] for cell 'u_system/vga_snake_i/clk_wiz_1/inst'
+Parsing XDC File [d:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_clk_wiz_1_0/vga_snake_clk_wiz_1_0.xdc] for cell 'u_system/vga_snake_i/clk_wiz_1/inst'
+INFO: [Timing 38-2] Deriving generated clocks [d:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_clk_wiz_1_0/vga_snake_clk_wiz_1_0.xdc:57]
+Finished Parsing XDC File [d:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_clk_wiz_1_0/vga_snake_clk_wiz_1_0.xdc] for cell 'u_system/vga_snake_i/clk_wiz_1/inst'
+Parsing XDC File [d:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_rst_clk_wiz_1_100M_0/vga_snake_rst_clk_wiz_1_100M_0_board.xdc] for cell 'u_system/vga_snake_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [d:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_rst_clk_wiz_1_100M_0/vga_snake_rst_clk_wiz_1_100M_0_board.xdc] for cell 'u_system/vga_snake_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [d:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_rst_clk_wiz_1_100M_0/vga_snake_rst_clk_wiz_1_100M_0.xdc] for cell 'u_system/vga_snake_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [d:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_rst_clk_wiz_1_100M_0/vga_snake_rst_clk_wiz_1_100M_0.xdc] for cell 'u_system/vga_snake_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [d:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_axi_uartlite_0_0/vga_snake_axi_uartlite_0_0_board.xdc] for cell 'u_system/vga_snake_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [d:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_axi_uartlite_0_0/vga_snake_axi_uartlite_0_0_board.xdc] for cell 'u_system/vga_snake_i/axi_uartlite_0/U0'
+Parsing XDC File [d:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_axi_uartlite_0_0/vga_snake_axi_uartlite_0_0.xdc] for cell 'u_system/vga_snake_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [d:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_axi_uartlite_0_0/vga_snake_axi_uartlite_0_0.xdc] for cell 'u_system/vga_snake_i/axi_uartlite_0/U0'
+Parsing XDC File [d:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_axi_gpio_0_0/vga_snake_axi_gpio_0_0_board.xdc] for cell 'u_system/vga_snake_i/axi_gpio_0/U0'
+Finished Parsing XDC File [d:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_axi_gpio_0_0/vga_snake_axi_gpio_0_0_board.xdc] for cell 'u_system/vga_snake_i/axi_gpio_0/U0'
+Parsing XDC File [d:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_axi_gpio_0_0/vga_snake_axi_gpio_0_0.xdc] for cell 'u_system/vga_snake_i/axi_gpio_0/U0'
+Finished Parsing XDC File [d:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_axi_gpio_0_0/vga_snake_axi_gpio_0_0.xdc] for cell 'u_system/vga_snake_i/axi_gpio_0/U0'
+Parsing XDC File [d:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_dlmb_v10_0/vga_snake_dlmb_v10_0.xdc] for cell 'u_system/vga_snake_i/microblaze_0_local_memory/dlmb_v10/U0'
+Finished Parsing XDC File [d:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_dlmb_v10_0/vga_snake_dlmb_v10_0.xdc] for cell 'u_system/vga_snake_i/microblaze_0_local_memory/dlmb_v10/U0'
+Parsing XDC File [d:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_ilmb_v10_0/vga_snake_ilmb_v10_0.xdc] for cell 'u_system/vga_snake_i/microblaze_0_local_memory/ilmb_v10/U0'
+Finished Parsing XDC File [d:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_ilmb_v10_0/vga_snake_ilmb_v10_0.xdc] for cell 'u_system/vga_snake_i/microblaze_0_local_memory/ilmb_v10/U0'
+Parsing XDC File [D:/vivadoproject/vga_snake/vga_snake.srcs/constrs_1/new/limlitdoc.xdc]
+Finished Parsing XDC File [D:/vivadoproject/vga_snake/vga_snake.srcs/constrs_1/new/limlitdoc.xdc]
+Parsing XDC File [D:/vivadoproject/vga_snake/vga_snake.srcs/constrs_1/new/nexys_ddr4_vga.xdc]
+Finished Parsing XDC File [D:/vivadoproject/vga_snake/vga_snake.srcs/constrs_1/new/nexys_ddr4_vga.xdc]
+Parsing XDC File [d:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_microblaze_0_axi_intc_0/vga_snake_microblaze_0_axi_intc_0_clocks.xdc] for cell 'u_system/vga_snake_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [d:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_microblaze_0_axi_intc_0/vga_snake_microblaze_0_axi_intc_0_clocks.xdc] for cell 'u_system/vga_snake_i/microblaze_0_axi_intc/U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'board_top'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: d:/vivadoproject/vga_snake/vga_snake.srcs/sources_1/bd/vga_snake/ip/vga_snake_microblaze_0_0/data/mb_bootloop_le.elf 
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 128 instances were transformed.
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 32 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 16 instances
+
+29 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 1357.754 ; gain = 1042.012
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.689 . Memory (MB): peak = 1357.754 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 21219b26a
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1375.082 ; gain = 17.328
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 2 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 279545733
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1375.082 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 2813b2a45
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1375.082 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 79 cells and removed 264 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 25501a914
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1375.082 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 932 cells
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG sys_clock_IBUF_BUFG_inst to drive 122 load(s) on clock net sys_clock_IBUF_BUFG
+INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
+Phase 4 BUFG optimization | Checksum: 19bcb8e18
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1375.082 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 1 cells of which 1 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 1adfbe8f0
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1375.082 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 1adfbe8f0
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1375.082 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.151 . Memory (MB): peak = 1375.082 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1adfbe8f0
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1375.082 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=3.581 | TNS=0.000 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 16 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 32
+Ending PowerOpt Patch Enables Task | Checksum: 1adfbe8f0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.225 . Memory (MB): peak = 1668.902 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1adfbe8f0
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:09 . Memory (MB): peak = 1668.902 ; gain = 293.820
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1adfbe8f0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1668.902 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+53 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:19 . Memory (MB): peak = 1668.902 ; gain = 311.148
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1668.902 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/vivadoproject/vga_snake/vga_snake.runs/impl_1/board_top_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file board_top_drc_opted.rpt -pb board_top_drc_opted.pb -rpx board_top_drc_opted.rpx
+Command: report_drc -file board_top_drc_opted.rpt -pb board_top_drc_opted.pb -rpx board_top_drc_opted.rpx
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/vivadoproject/vga_snake/vga_snake.runs/impl_1/board_top_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 1668.902 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: fa4e7e31
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.089 . Memory (MB): peak = 1668.902 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 1668.902 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: ee8cc6dd
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1668.902 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 13c12b65d
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1668.902 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 13c12b65d
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1668.902 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 13c12b65d
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1668.902 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1728ebe78
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1668.902 ; gain = 0.000
+
+Phase 2.2 Physical Synthesis In Placer
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 1668.902 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+|  Optimization       |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------
+|  Very High Fanout   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total              |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2 Physical Synthesis In Placer | Checksum: f366572f
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:39 . Memory (MB): peak = 1668.902 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 14a085849
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:40 . Memory (MB): peak = 1668.902 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 14a085849
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:40 . Memory (MB): peak = 1668.902 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 3fe5b1e7
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:49 . Memory (MB): peak = 1668.902 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 11b26d360
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:50 . Memory (MB): peak = 1668.902 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: bb6d1880
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:50 . Memory (MB): peak = 1668.902 ; gain = 0.000
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: eb69aff2
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:01:00 . Memory (MB): peak = 1668.902 ; gain = 0.000
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: d0a10345
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:01:02 . Memory (MB): peak = 1668.902 ; gain = 0.000
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: d0a10345
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:01:02 . Memory (MB): peak = 1668.902 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: d0a10345
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:01:03 . Memory (MB): peak = 1668.902 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 16690e0f0
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-33] Processed net u_system/vga_snake_i/top_0/inst/u_snake/enemy_pos_reg[30][15]_0, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-31] BUFG insertion identified 1 candidate nets, 0 success, 1 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 16690e0f0
+
+Time (s): cpu = 00:01:35 ; elapsed = 00:01:10 . Memory (MB): peak = 1668.902 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=1.468. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: c8585320
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:01:10 . Memory (MB): peak = 1668.902 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: c8585320
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:01:11 . Memory (MB): peak = 1668.902 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: c8585320
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:01:11 . Memory (MB): peak = 1668.902 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: c8585320
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:01:11 . Memory (MB): peak = 1668.902 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: fecce648
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:01:12 . Memory (MB): peak = 1668.902 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: fecce648
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:01:12 . Memory (MB): peak = 1668.902 ; gain = 0.000
+Ending Placer Task | Checksum: c7335676
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:01:12 . Memory (MB): peak = 1668.902 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+75 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:40 ; elapsed = 00:01:14 . Memory (MB): peak = 1668.902 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 1668.902 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/vivadoproject/vga_snake/vga_snake.runs/impl_1/board_top_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1668.902 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_io -file board_top_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1668.902 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file board_top_utilization_placed.rpt -pb board_top_utilization_placed.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.287 . Memory (MB): peak = 1668.902 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file board_top_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.085 . Memory (MB): peak = 1668.902 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 777172f3 ConstDB: 0 ShapeSum: 4fc1e383 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 588c1709
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:19 . Memory (MB): peak = 1733.340 ; gain = 64.438
+Post Restoration Checksum: NetGraph: 1d6560f5 NumContArr: 3b26b614 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 588c1709
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 1733.594 ; gain = 64.691
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 588c1709
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:20 . Memory (MB): peak = 1738.551 ; gain = 69.648
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 588c1709
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:20 . Memory (MB): peak = 1738.551 ; gain = 69.648
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 2050633ec
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:29 . Memory (MB): peak = 1785.789 ; gain = 116.887
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.691  | TNS=0.000  | WHS=-1.437 | THS=-160.498|
+
+Phase 2 Router Initialization | Checksum: 19e6c3965
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:33 . Memory (MB): peak = 1803.789 ; gain = 134.887
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 121bc6330
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:42 . Memory (MB): peak = 1856.117 ; gain = 187.215
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 16489
+ Number of Nodes with overlaps = 1681
+ Number of Nodes with overlaps = 291
+ Number of Nodes with overlaps = 80
+ Number of Nodes with overlaps = 26
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.873  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 350ff252
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:01:23 . Memory (MB): peak = 1856.117 ; gain = 187.215
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.873  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 2530521e4
+
+Time (s): cpu = 00:02:12 ; elapsed = 00:01:25 . Memory (MB): peak = 1856.117 ; gain = 187.215
+Phase 4 Rip-up And Reroute | Checksum: 2530521e4
+
+Time (s): cpu = 00:02:13 ; elapsed = 00:01:25 . Memory (MB): peak = 1856.117 ; gain = 187.215
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 2530521e4
+
+Time (s): cpu = 00:02:13 ; elapsed = 00:01:25 . Memory (MB): peak = 1856.117 ; gain = 187.215
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 2530521e4
+
+Time (s): cpu = 00:02:13 ; elapsed = 00:01:26 . Memory (MB): peak = 1856.117 ; gain = 187.215
+Phase 5 Delay and Skew Optimization | Checksum: 2530521e4
+
+Time (s): cpu = 00:02:13 ; elapsed = 00:01:26 . Memory (MB): peak = 1856.117 ; gain = 187.215
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 256ef432e
+
+Time (s): cpu = 00:02:15 ; elapsed = 00:01:27 . Memory (MB): peak = 1856.117 ; gain = 187.215
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.960  | TNS=0.000  | WHS=-0.520 | THS=-2.799 |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1f4e3c262
+
+Time (s): cpu = 00:02:16 ; elapsed = 00:01:27 . Memory (MB): peak = 1856.117 ; gain = 187.215
+Phase 6 Post Hold Fix | Checksum: 200f0d401
+
+Time (s): cpu = 00:02:16 ; elapsed = 00:01:28 . Memory (MB): peak = 1856.117 ; gain = 187.215
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 18.3846 %
+  Global Horizontal Routing Utilization  = 19.1364 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 194aa3296
+
+Time (s): cpu = 00:02:17 ; elapsed = 00:01:28 . Memory (MB): peak = 1856.117 ; gain = 187.215
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 194aa3296
+
+Time (s): cpu = 00:02:17 ; elapsed = 00:01:28 . Memory (MB): peak = 1856.117 ; gain = 187.215
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 16ff9f2ef
+
+Time (s): cpu = 00:02:20 ; elapsed = 00:01:32 . Memory (MB): peak = 1856.117 ; gain = 187.215
+
+Phase 10 Post Router Timing
+
+Phase 10.1 Update Timing
+Phase 10.1 Update Timing | Checksum: 1d093d3d9
+
+Time (s): cpu = 00:02:22 ; elapsed = 00:01:34 . Memory (MB): peak = 1856.117 ; gain = 187.215
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.960  | TNS=0.000  | WHS=0.056  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 1d093d3d9
+
+Time (s): cpu = 00:02:23 ; elapsed = 00:01:34 . Memory (MB): peak = 1856.117 ; gain = 187.215
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:02:23 ; elapsed = 00:01:34 . Memory (MB): peak = 1856.117 ; gain = 187.215
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+93 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:02:27 ; elapsed = 00:01:36 . Memory (MB): peak = 1856.117 ; gain = 187.215
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 1856.117 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/vivadoproject/vga_snake/vga_snake.runs/impl_1/board_top_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1856.117 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file board_top_drc_routed.rpt -pb board_top_drc_routed.pb -rpx board_top_drc_routed.rpx
+Command: report_drc -file board_top_drc_routed.rpt -pb board_top_drc_routed.pb -rpx board_top_drc_routed.rpx
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/vivadoproject/vga_snake/vga_snake.runs/impl_1/board_top_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file board_top_methodology_drc_routed.rpt -pb board_top_methodology_drc_routed.pb -rpx board_top_methodology_drc_routed.rpx
+Command: report_methodology -file board_top_methodology_drc_routed.rpt -pb board_top_methodology_drc_routed.pb -rpx board_top_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file D:/vivadoproject/vga_snake/vga_snake.runs/impl_1/board_top_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 1856.117 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_power -file board_top_power_routed.rpt -pb board_top_power_summary_routed.pb -rpx board_top_power_routed.rpx
+Command: report_power -file board_top_power_routed.rpt -pb board_top_power_summary_routed.pb -rpx board_top_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+105 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 1935.160 ; gain = 79.043
+INFO: [runtcl-4] Executing : report_route_status -file board_top_route_status.rpt -pb board_top_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file board_top_timing_summary_routed.rpt -pb board_top_timing_summary_routed.pb -rpx board_top_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max, Timing Stage: Requireds.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file board_top_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-545] No incremental reuse to report, no incremental placement and routing data was found.
+INFO: [runtcl-4] Executing : report_clock_utilization -file board_top_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file board_top_bus_skew_routed.rpt -pb board_top_bus_skew_routed.pb -rpx board_top_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max, Timing Stage: Requireds.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+Command: write_bitstream -force board_top.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./board_top.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+123 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:31 ; elapsed = 00:00:22 . Memory (MB): peak = 2446.945 ; gain = 509.840
+INFO: [Common 17-206] Exiting Vivado at Mon Jun  8 15:01:28 2026...

@@ -1,0 +1,26 @@
+# Vivado project files - keep original line endings (do NOT convert LF/CRLF)
+*.xci       -text
+*.bd        -text
+*.bxml      -text
+*.xdc       -text
+*.v         -text
+*.vhd       -text
+*.vhdl      -text
+*.tcl       -text
+*.xml       -text
+*.hdf       -text
+*.hwdef     -text
+*.sysdef    -text
+*.xpr       -text
+
+# Binary files - no conversion
+*.bit       binary
+*.bin       binary
+*.mmi       binary
+*.elf       binary
+*.mcs       binary
+*.prm       binary
+
+# Images / docs
+*.pdf       binary
+*.png       binary

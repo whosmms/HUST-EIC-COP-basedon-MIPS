@@ -1,0 +1,28 @@
+# Python virtual environment
+.venv/
+
+# Vivado temporary / configuration files
+.Xil/
+.claude/
+
+# Simulation compiled objects (rebuilt by Vivado)
+xsim.dir/
+vga_snake.sim/
+vga_snake.hw/
+
+# Empty directory
+-p/
+
+# Logs, journals, and playback files
+*.log
+*.jou
+*.pb
+*.vds
+
+# Backup / webtalk files
+*_backup.*
+webtalk*
+
+# Auto-generated help/PDF
+vivado_help.txt
+vivado_block_design_connection_list.pdf
