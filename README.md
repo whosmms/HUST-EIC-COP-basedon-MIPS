@@ -6,4 +6,4 @@ BSP为vga_snake_app_bsp，比特流文件位于vga_snake.runs\impl_1\board_top.b
 开发板需接VGA主动转HDMI到显示屏，波特率为115200。
 由开发板的btnc控制开始与暂停，由btnu，btnl，btnr，btnd控制方向，每次操作会在skd终端打印状态。
 项目贡献者为yhl，lh，和他们的deepseek，gpt和claude老师。
-请选择code查看而非preview，以改善阅读体验。
+README.md请选择code查看而非preview，以改善阅读体验。
